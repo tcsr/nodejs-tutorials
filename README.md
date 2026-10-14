@@ -1,12 +1,13 @@
-# Node.js tutorials: Fastify and Temporal
+# Node.js tutorials: Fastify, Temporal and event-driven architecture
 
-Three practical guides (PDF), built from code that is type-checked, tested and run.
+Four practical guides (PDF), built from code that is type-checked, tested and run.
 
 | Guide | Pages | Companion code |
 |---|---|---|
 | [Fastify with Node.js – The Complete Practical Tutorial](pdfs/Fastify_NodeJS_Complete_Tutorial.pdf) | 79 | [fastify-tasks-api](https://github.com/tcsr/fastify-tasks-api), [fastify-examples](https://github.com/tcsr/fastify-examples) |
 | [Temporal with Node.js – The Complete Practical Tutorial](pdfs/Temporal_NodeJS_Complete_Tutorial.pdf) | 78 | [temporal-order-service](https://github.com/tcsr/temporal-order-service), [temporal-examples](https://github.com/tcsr/temporal-examples) |
 | [Fastify + Temporal – Durable HTTP APIs](pdfs/Fastify_Temporal_Companion_Guide.pdf) | 20 | [fastify-temporal-orders](https://github.com/tcsr/fastify-temporal-orders) |
+| [Event-Driven Architecture with Node.js, Kafka and Temporal](pdfs/Event_Driven_Architecture_NodeJS_Kafka_Temporal.pdf) | 42 | [eda-commerce](https://github.com/tcsr/eda-commerce) |
 
 Verified with Node.js 24, Fastify 5.12, @temporalio/* 1.24, TypeScript 7 (September 2026).
 
@@ -31,11 +32,13 @@ git clone https://github.com/tcsr/nodejs-tutorials
 git clone https://github.com/tcsr/fastify-temporal-orders
 git clone https://github.com/tcsr/temporal-examples
 git clone https://github.com/tcsr/fastify-examples
+git clone https://github.com/tcsr/eda-commerce
 pip install -r nodejs-tutorials/requirements.txt
 cd nodejs-tutorials
 python builders/build_fastify_tutorial.py
 python builders/build_temporal_tutorial.py
 python builders/build_combined_tutorial.py
+python builders/build_eda_guide.py
 ```
 
 The output goes to `pdfs/`. Set `PROJECTS_DIR` if the companion repositories live
