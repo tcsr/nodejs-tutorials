@@ -8,6 +8,7 @@ Four practical guides (PDF), built from code that is type-checked, tested and ru
 | [Temporal with Node.js – The Complete Practical Tutorial](pdfs/Temporal_NodeJS_Complete_Tutorial.pdf) | 78 | [temporal-order-service](https://github.com/tcsr/temporal-order-service), [temporal-examples](https://github.com/tcsr/temporal-examples) |
 | [Fastify + Temporal – Durable HTTP APIs](pdfs/Fastify_Temporal_Companion_Guide.pdf) | 20 | [fastify-temporal-orders](https://github.com/tcsr/fastify-temporal-orders) |
 | [Event-Driven Architecture with Node.js, Kafka and Temporal](pdfs/Event_Driven_Architecture_NodeJS_Kafka_Temporal.pdf) | 42 | [eda-commerce](https://github.com/tcsr/eda-commerce) |
+| [Event-Driven Systems in Practice: Kafka, Temporal, DynamoDB and Datadog](pdfs/Event_Driven_Systems_in_Practice.pdf) (architecture overview, prose) | 20 | – |
 
 Verified with Node.js 24, Fastify 5.12, @temporalio/* 1.24, TypeScript 7 (September 2026).
 
@@ -39,6 +40,7 @@ python builders/build_fastify_tutorial.py
 python builders/build_temporal_tutorial.py
 python builders/build_combined_tutorial.py
 python builders/build_eda_guide.py
+python builders/build_eda_overview.py
 ```
 
 The output goes to `pdfs/`. Set `PROJECTS_DIR` if the companion repositories live
